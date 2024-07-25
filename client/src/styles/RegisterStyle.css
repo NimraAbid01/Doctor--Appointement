@@ -1,0 +1,49 @@
+/* RegisterStyle.css */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(224,224,224);
+}
+
+.card {
+  border: 1px solid #2ecc71; /* Set border color to match the background color */
+  border-radius: 10px; /* Add some border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: #ffffff; /* Set background color to white */
+}
+
+.card p-4 {
+  padding: 2rem !important; /* Adjust padding for the card */
+}
+
+/* Style the form heading */
+.card h3 {
+  color:black; /* Set heading color to green */
+}
+
+/* Style the form labels */
+.card label {
+  color: black; /* Set label color to green */
+}
+
+/* Style the form controls */
+.card input {
+  border: 1px solid #2ecc71; /* Set input border color to green */
+}
+
+/* Style the submit button */
+.card button {
+  background-color: #2ecc71; /* Set button background color to green */
+  border: 1px solid #2ecc71; /* Set button border color to green */
+  color: #ffffff; /* Set button text color to white */
+  width: 100%; /* Make the button full width */
+  margin-top: 10px; /* Add some top margin */
+}
+
+.card button:hover {
+  background-color: #27ae60; /* Darken the button color on hover */
+  border: 1px solid #27ae60; /* Darken the button border color on hover */
+}
