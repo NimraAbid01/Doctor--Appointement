@@ -1,22 +1,13 @@
 {
-    "version": 2,
-    "name": "doc-appointement ",
-    "builds": [
+  "version": 2,
+  "name": "doc-appointment-backend",
+  "builds": [
       {
-        "src": "client/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "client/build"
-        }
-      },
-      {
-        "src": "backend/server.js",
-        "use": "@vercel/node"
+          "src": "server.js",
+          "use": "@vercel/node"
       }
-    ],
-    "routes": [
-      { "src": "/api/(.*)", "dest": "/backend/server.js" },
-      { "src": "/(.*)", "dest": "/client/$1" }
-    ]
-  }
-  
+  ],
+  "routes": [
+      { "src": "/api/(.*)", "dest": "/server.js" }
+  ]
+}
